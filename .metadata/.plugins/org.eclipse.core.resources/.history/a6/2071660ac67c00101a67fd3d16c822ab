@@ -1,0 +1,34 @@
+package seleniumpac;
+
+import org.testng.annotations.Test;
+
+public class lab08_3assertions {
+  @Test
+  public void f() {
+	  
+
+	// 1. Verify Page Title
+	assertEquals("Your Store", driver.getTitle());
+
+	// 2. Verify "Desktops" tab is displayed
+	assertTrue(driver.findElement(By.linkText("Desktops")).isDisplayed());
+
+	// 3. Verify "Mac" link is displayed
+	assertTrue(driver.findElement(By.linkText("Mac")).isDisplayed());
+
+	// 4. Verify "Sort By" dropdown is present
+	assertTrue(driver.findElement(By.id("input-sort")).isDisplayed());
+
+	// 5. Verify selected option is "Name (A - Z)"
+	Select sortBy = new Select(driver.findElement(By.id("input-sort")));
+	assertEquals("Name (A - Z)", sortBy.getFirstSelectedOption().getText());
+
+	// 6. Verify "Add to Cart" button is enabled
+	assertTrue(driver.findElement(By.xpath("//button[contains(text(),'Add to Cart')]")).isEnabled());
+
+	// 7. After clicking Add to Cart, verify success message
+	String successMsg = driver.findElement(By.cssSelector(".alert-success")).getText();
+	assertTrue(successMsg.contains("Success: You have added"));
+
+  }
+}

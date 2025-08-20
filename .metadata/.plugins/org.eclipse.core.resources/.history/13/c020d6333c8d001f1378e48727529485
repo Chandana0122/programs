@@ -1,0 +1,27 @@
+package com.kodnest;
+
+public class Pat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Artist art = new Artist();
+		art.sing();
+		art.paint();
+
+	}
+
+}
+interface Singer {
+	public abstract void sing();	
+}
+interface Painter {
+	public abstract void paint(); 
+}
+class Artist implements Singer,Painter {
+	public void sing() {
+		System.out.println("artist can sing");
+	}
+	public void paint() {
+		System.out.println(("artist can paint"));
+	}
+}

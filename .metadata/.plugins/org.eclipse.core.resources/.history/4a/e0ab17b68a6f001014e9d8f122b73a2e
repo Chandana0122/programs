@@ -1,0 +1,23 @@
+package package1;
+
+public class lab4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String fname  = "chandana";
+		String lname = "s";
+		char gender = 'F';
+		int age = 23;
+		int weight = 43;
+		
+		System.out.println("Person Details");
+		System.out.println("________");
+		System.out.println("First name:" + fname);
+		System.out.println("Last name : " + lname);
+		System.out.println("Age : " + age);
+		System.out.println("Weight : " + weight);
+		
+
+	}
+
+}

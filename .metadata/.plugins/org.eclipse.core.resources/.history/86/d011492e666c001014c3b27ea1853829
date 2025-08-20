@@ -1,0 +1,22 @@
+package Collections;
+
+import java.util.ArrayList;
+
+public class ArrayL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList array = new ArrayList();
+		array.add(10);
+		array.add(20);
+		array.add(30);
+		array.add(40);
+		array.add(2, 90);
+		array.addFirst(5);
+		array.addLast(100);
+		
+		System.out.println("The array items are: " + array);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package seleniumpac;
+
+import org.testng.annotations.Test;
+
+public class login_pageobjectsTest {
+
+  @Test
+  public void clickonloginTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void enterpasswordTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void enterusernameTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+
+  @Test
+  public void login_pageobjectsTest() {
+    throw new RuntimeException("Test not implemented");
+  }
+}

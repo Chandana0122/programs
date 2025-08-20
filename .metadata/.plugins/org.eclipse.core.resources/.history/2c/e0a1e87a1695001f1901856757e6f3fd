@@ -1,0 +1,20 @@
+package com.kodnest;
+
+public class Stu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student s = new.Studnet();
+
+	}
+
+}
+class Student {
+	int roll;
+	String name;
+	int yop;
+	String stream;
+	float cgpa;
+	
+	
+}

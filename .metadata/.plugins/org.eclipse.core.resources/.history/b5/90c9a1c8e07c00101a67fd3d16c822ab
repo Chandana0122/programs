@@ -1,0 +1,9 @@
+package seleniumpac;
+
+import org.testng.annotations.Test;
+
+public class Lab008_4assertions {
+  @Test
+  public void f() {
+  }
+}

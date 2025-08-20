@@ -1,0 +1,25 @@
+package com.kodnest;
+
+import java.util.Arrays;
+
+public class Arr4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {4,3,8,56,2};
+		
+		
+		System.out.println("Original array:");
+		for(int i = 0; i< arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+		
+		Arrays.sort(arr);
+		System.out.println("Sorted array:");
+		for(int i = 0; i< arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+
+	}
+
+}

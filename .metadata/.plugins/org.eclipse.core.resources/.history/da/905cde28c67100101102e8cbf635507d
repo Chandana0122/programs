@@ -1,0 +1,26 @@
+package package1;
+
+public class Lab21 {
+	public static void main(String[] args) {
+        // Create Person objects
+        person smith = new person("Smith", 30.5f);
+        person kathy = new person("Kathy", 28.0f);
+
+        // Create Account objects
+        Account smithAccount = new Account(smith, 2000);
+        Account kathyAccount = new Account(kathy, 3000);
+
+        // Deposit 2000 into Smith's account
+        smithAccount.deposit(2000);
+
+        // Withdraw 2000 from Kathy's account
+        kathyAccount.withdraw(2000);
+
+        // Display updated balances
+        System.out.println("\n--- Updated Account Information ---");
+        System.out.println(smithAccount);
+        System.out.println(kathyAccount);
+    }
+}
+
+

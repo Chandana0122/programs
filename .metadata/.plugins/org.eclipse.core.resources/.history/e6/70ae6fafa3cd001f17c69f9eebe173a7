@@ -1,0 +1,22 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			// step 1
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("DRIVER LOADED");
+			
+			//step2
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/college","root","System@123456789");
+			System.out.println("CONNECTION ESTABLISHED");
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

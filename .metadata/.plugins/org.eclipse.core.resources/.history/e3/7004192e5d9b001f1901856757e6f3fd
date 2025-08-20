@@ -1,0 +1,37 @@
+package com.kodnest;
+
+import com.kodnest.Outer.Inner;
+
+public class Main4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Outer out = new Outer();
+		out.outerFun();
+		
+		Outer.Inner in =new Outer.Inner();
+		in.innerFun();
+
+
+	}
+
+}
+class Outer {
+	private int x = 200;
+	private static int y = 99;
+	
+	static class Inner {
+		void innerFun() {
+			System.out.println("inner fun()");
+			Outer o = new Outer();
+			System.out.println("outer x = " + o.x);
+			System.out.println("Outer y = " + y);
+		}
+	}
+	
+	void outerFun() {
+		System.out.println("outer fun()");
+		Inner in = new Inner();
+		in.innerFun();
+	}
+}

@@ -1,0 +1,19 @@
+package com.kodnest;
+
+import java.util.Scanner;
+
+public class User {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bank b = new Bank();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the password");
+		int pass = sc.nextInt();
+		System.out.println("Balance amt = " + b.getAmt(pass));
+		
+		
+
+	}
+
+}

@@ -1,0 +1,53 @@
+package package1;
+
+public class Account {
+		private static long nextAccNum = 1001; // Auto-generating account number
+	    private long accNum;
+	    private double balance;
+	    private person accHolder;
+
+	    // Minimum balance
+	    private static final double MIN_BALANCE = 500.0;
+
+	    // Constructor
+	    public Account(person accHolder, double initialBalance) {
+	        this.accNum = nextAccNum++;
+	        this.accHolder = accHolder;
+	        this.balance = initialBalance;
+	    }
+
+	    // Deposit method
+	    public void deposit(double amount) {
+	        if (amount > 0) {
+	            balance += amount;
+	        }
+	    }
+
+	    // Withdraw method
+	    public void withdraw(double amount) {
+	        if (amount > 0 && (balance - amount) >= MIN_BALANCE) {
+	            balance -= amount;
+	        } else {
+	            System.out.println("Insufficient balance or minimum balance limit reached.");
+	        }
+	    }
+
+	    // Get balance
+	    public double getBalance() {
+	        return balance;
+	    }
+
+	    // Getters and setters
+	    public long getAccNum() {
+	        return accNum;
+	    }
+	    
+	    public void setAccHolder(person accHolder) {
+	        this.accHolder = accHolder;
+	    }
+
+	    public person getAccHolder() {
+	        return accHolder;
+	    }
+
+}

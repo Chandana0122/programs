@@ -1,0 +1,23 @@
+package package1;
+
+import java.time.LocalDate;
+
+public class lab13 {
+	public void calculateWarrantyExpiry(LocalDate purchaseDate, int warrantyYears, int warrantyMonths) {
+        LocalDate expiryDate = purchaseDate.plusYears(warrantyYears).plusMonths(warrantyMonths);
+        System.out.println("Purchase Date: " + purchaseDate);
+        System.out.println("Warranty Period: " + warrantyYears + " years and " + warrantyMonths + " months");
+        System.out.println("Warranty Expiry Date: " + expiryDate);
+    }
+
+    public static void main(String[] args) {
+        Lab13 obj = new Lab13();
+
+        LocalDate purchaseDate = LocalDate.of(2024, 8, 15);
+        int warrantyYears = 1;
+        int warrantyMonths = 6;
+
+        obj.calculateWarrantyExpiry(purchaseDate, warrantyYears, warrantyMonths);
+    }
+
+}

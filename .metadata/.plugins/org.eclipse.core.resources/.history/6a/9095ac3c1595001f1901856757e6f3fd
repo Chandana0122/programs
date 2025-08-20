@@ -1,0 +1,21 @@
+package com.kodnest;
+
+public class M1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class Bank {
+	int balance;
+}
+class Hero extends Bank {
+	Bank b = new Bank();
+	b.balance = 100;
+}
+class Villain {
+	Bank b = new Bank();
+	b.balance;
+}

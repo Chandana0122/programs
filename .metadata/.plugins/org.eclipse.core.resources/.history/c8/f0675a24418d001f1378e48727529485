@@ -1,0 +1,27 @@
+package com.kodnest;
+
+public class Abstract {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			Test t = new Test();
+			t.fun1();
+			t.fun2();
+
+		}
+
+	}
+	class Demo1 {
+		void fun1() {
+			System.out.println("fun1");
+		}
+	}
+	interface Demo2 {
+		void fun2();
+	}
+
+	class Test extends Demo1 implements Demo2 {
+		public void fun2() {
+			System.out.println("fun2");
+		}
+	}
