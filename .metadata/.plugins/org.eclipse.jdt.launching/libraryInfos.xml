@@ -3,6 +3,7 @@
     <libraryInfo home="C:\Users\chandana\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_22.0.1.v20240426-1149" version="22.0.1"/>
     <libraryInfo home="C:\Program Files\Java\jdk-24" version="24.0.2"/>
     <libraryInfo home="C:\Users\chandana\Downloads\jdk-21_windows-x64_bin\jdk-21.0.8" version="21.0.8"/>
+    <libraryInfo home="C:\Program Files\Java\jdk-21" version="21.0.8"/>
     <libraryInfo home="C:\Program Files (x86)\Java\jre1.8.0_441" version="1.8.0_441">
         <bootpath>
             <entry path="C:\Program Files (x86)\Java\jre1.8.0_441\lib\resources.jar"/>

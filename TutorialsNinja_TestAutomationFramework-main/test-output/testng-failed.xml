@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.RetryListeners"/>
+    <listener class-name="utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC08_HomePageLogo">
+        <methods>
+          <include name="teardown"/>
+          <include name="Methofname"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC08_HomePageLogo -->
+      <class name="testCases.TC03_SearchTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="testSearchFunctionality"/>
+        </methods>
+      </class> <!-- testCases.TC03_SearchTest -->
+      <class name="testCases.TC04_LoginDDT">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="Verify_LoginSST"/>
+        </methods>
+      </class> <!-- testCases.TC04_LoginDDT -->
+      <class name="testCases.TC07_AddToCartTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="testCartItemDetails"/>
+        </methods>
+      </class> <!-- testCases.TC07_AddToCartTest -->
+      <class name="testCases.TC06_TestHoverAndClickAction">
+        <methods>
+          <include name="teardown"/>
+          <include name="testHoverAndClick"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC06_TestHoverAndClickAction -->
+      <class name="testCases.TC01_AccountRegistrationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="Verifry_Account_Registration"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC01_AccountRegistrationTest -->
+      <class name="testCases.TC02_LoginTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="verify_Login"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC02_LoginTest -->
+      <class name="testCases.TC05_BrokenLink">
+        <methods>
+          <include name="teardown"/>
+          <include name="validateBrokenLinks"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC05_BrokenLink -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

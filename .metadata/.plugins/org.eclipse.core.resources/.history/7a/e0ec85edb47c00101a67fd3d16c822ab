@@ -1,9 +1,0 @@
-package seleniumpac;
-
-import org.testng.annotations.Test;
-
-public class TC0013 {
-  @Test
-  public void f() {
-  }
-}
